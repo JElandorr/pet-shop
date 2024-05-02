@@ -477,6 +477,11 @@ ul {
 }
 
 /* - Navigation Menu */
+/* - Swiper */
+.carousel-inner .swiper-slide img {
+  width: 100%;
+}
+
 /* - Social Icons */
 
 /* ## Newsletter Section */

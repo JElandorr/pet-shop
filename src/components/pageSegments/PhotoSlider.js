@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Import Swiper styles
-// import "swiper/css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const PhotoSlider = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const sliderData = [
     {
       id: 1,
       img: "images/slider-image/slider-1.jpg",
-      title: "Dog cat pat care",
-      content: "We Take Good Care For<span>Your Lovely Pet</span>",
+      title: "Dog cat pet care",
+      content: "We Take Good Care For Your Lovely Pet",
       text: "Those were the days. And we know Flipper lives in a world full of wonder flying there-under under the sea. The Love Boat soon will be making",
       btnText: "Purchase",
       btnClass: "btn btn-default",
@@ -21,8 +22,8 @@ const PhotoSlider = () => {
     {
       id: 2,
       img: "images/slider-image/slider-2.jpg",
-      title: "Dog cat pat care",
-      content: "We Take Good Care For<span>Your Lovely Pet</span>",
+      title: "Dog cat pet care",
+      content: "We Take Good Care For Your Lovely Pet",
       text: "Those were the days. And we know Flipper lives in a world full of wonder flying there-under under the sea. The Love Boat soon will be making",
       btnText: "Purchase",
       btnClass: "btn btn-default",
@@ -31,52 +32,14 @@ const PhotoSlider = () => {
     {
       id: 3,
       img: "images/slider-image/slider-3.jpg",
-      title: "Dog cat pat care",
-      content: "We Take Good Care For<span>Your Lovely Pet</span>",
+      title: "Dog cat pet care",
+      content: "We Take Good Care For Your Lovely Pet",
       text: "Those were the days. And we know Flipper lives in a world full of wonder flying there-under under the sea. The Love Boat soon will be making",
       btnText: "Purchase",
       btnClass: "btn btn-default",
       btnLink: "#",
     },
   ];
-
-  const handleSlideChange = () => {
-    setActiveIndex((state) =>
-      state === sliderData.length - 1 ? 0 : state + 1
-    );
-  };
-
-  const Slide = ({ sliderData, isActive }) => {
-    console.log(isActive);
-    return (
-      <div className={`item ${isActive ? "active" : ""}`}>
-        <img src={sliderData.img} alt={`slider-${sliderData.id}`} />
-        <div className="slider-content">
-          <div className="container">
-            <div className="slide-content slide-content-1">
-              <h2>{sliderData.title}</h2>
-              <h3>{sliderData.content}</h3>
-              <p>{sliderData.text}</p>
-              <a
-                href={sliderData.btnLink}
-                className={sliderData.btnClass}
-                title={sliderData.btnText}
-              >
-                {sliderData.btnText}
-              </a>
-              <a
-                href={sliderData.btnLink}
-                className={`${sliderData.btnClass} bg`}
-                title={sliderData.btnText}
-              >
-                {sliderData.btnText}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div id="photo-slider" className="photo-slider container-fluid no-padding">
@@ -87,22 +50,61 @@ const PhotoSlider = () => {
       >
         <div className="carousel-inner" role="listbox">
           <Swiper
-            slidesPerView={1}
-            spaceBetween={0}
-            loop={true}
-            navigation={true}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={handleSlideChange}
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={
+              sliderData.length > 1
+                ? {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  }
+                : true
+            }
+            className="mySwiper"
           >
             {sliderData.map((slider, index) => {
-              console.log(slider);
-              console.log(index);
-              console.log(activeIndex);
               return (
                 <SwiperSlide key={slider.id}>
-                  <Slide sliderData={slider} isActive={index === activeIndex} />
+                  <>
+                    <div>
+                      <img src={slider.img} alt="slider" />
+                      <div className="slider-content">
+                        <div className="container">
+                          <div className="slide-content slide-content-2">
+                            <h3>{slider.content}</h3>
+                            <h2>
+                              <span>{slider.title}</span>
+                            </h2>
+                            <p>
+                              <span>{slider.text}</span>
+                            </p>
+                            <a
+                              href="#"
+                              className="btn btn-default"
+                              title="Purchase"
+                            >
+                              Purchase
+                            </a>
+                            <a
+                              href="#"
+                              className="btn btn-default bg"
+                              title="Learn More"
+                            >
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
                 </SwiperSlide>
               );
             })}

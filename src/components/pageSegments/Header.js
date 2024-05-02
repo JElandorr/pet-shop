@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,35 +15,35 @@ const Header = () => {
             <div className="col-md-8 col-sm-8 col-xs-6">
               <p>
                 Leave A Message:{" "}
-                <a href="mailto:info@petcare.com">info@petcare.com</a>
+                <Link to="mailto:info@petcare.com">info@petcare.com</Link>
               </p>
             </div>
             <div className="social col-md-4 col-sm-4 col-xs-6 pull-right">
               <ul className="no-bottom-margin">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <img src="images/icon/tw-ic.png" alt="Twitter" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <img src="images/icon/fb-ic.png" alt="Facebook" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <img src="images/icon/g+-ic.png" alt="Google pulse" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <img src="images/icon/dribbble-ic.png" alt="dribbler" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <img src="images/icon/in-ic.png" alt="In" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -57,9 +58,9 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-3 logo-block pull-left">
-              <a href="#">
+              <Link to="#">
                 <img src="images/logo.png" alt="Logo" />
-              </a>
+              </Link>
             </div>
             <div className="col-md-9 pull-right">
               <div className="location">
@@ -81,10 +82,10 @@ const Header = () => {
                 </p>
               </div>
               <div className="cart">
-                <a href="#">
+                <Link to="#">
                   <img src="images/icon/cart-ic.png" alt="png" />
                   <span>10</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -110,25 +111,25 @@ const Header = () => {
                 <span className="icon-bar" />
               </button>
               <div className="navbar-brand logo-block">
-                <a href="#">
+                <Link to="#">
                   <img src="images/logo.png" alt="Logo" />
-                </a>
+                </Link>
               </div>
             </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav">
                 <li className="active">
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="about.html">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="services.html">Services</a>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li className="dropdown">
-                  <a
-                    href="shop.html"
+                  <Link
+                    to="/shop"
                     title="product list"
                     className="dropdown-toggle"
                     role="button"
@@ -136,26 +137,26 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Shop
-                  </a>
+                  </Link>
                   <i className="ddl-switch fa fa-angle-down" />
                   <ul className="dropdown-menu">
                     <li>
-                      <a href="shop-pets.html">Pets List</a>
+                      <Link to="/shop-pets">Pets List</Link>
                     </li>
                     <li>
-                      <a href="shop-details.html">Product Details</a>
+                      <Link to="/shop-details">Product Details</Link>
                     </li>
                     <li>
-                      <a href="checkout.html">Place Order</a>
+                      <Link to="checkout.html">Place Order</Link>
                     </li>
                     <li>
-                      <a href="shop-cart.html">My Cart</a>
+                      <Link to="/shop-cart">My Cart</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     title="Pages"
                     className="dropdown-toggle"
                     role="button"
@@ -163,17 +164,17 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Pages
-                  </a>
+                  </Link>
                   <i className="ddl-switch fa fa-angle-down" />
                   <ul className="dropdown-menu">
                     <li>
-                      <a href="error.html">Error</a>
+                      <Link to="error.html">Error</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
-                    href="blog.html"
+                  <Link
+                    to="blog.html"
                     title="Blog"
                     className="dropdown-toggle"
                     role="button"
@@ -181,20 +182,20 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Blog
-                  </a>
+                  </Link>
                   <i className="ddl-switch fa fa-angle-down" />
                   <ul className="dropdown-menu">
                     <li>
-                      <a href="single-blog.html">Single Blog</a>
+                      <Link to="single-blog.html">Single Blog</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="contact-us.html">Contact US</a>
+                  <Link to="contact-us.html">Contact US</Link>
                 </li>
               </ul>
             </div>
-            <a href="#">Get An Appointment</a>
+            <Link to="#">Get An Appointment</Link>
           </div>
         </div>
       </nav>
