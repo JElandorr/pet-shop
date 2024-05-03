@@ -10,7 +10,7 @@ import WhyChooseUs from "../pageSegments/WhyChooseUs";
 import Testimonial from "../pageSegments/Testimonial";
 import Team from "../pageSegments/Team";
 import Counter from "../pageSegments/Counter";
-import Shop from "../pageSegments/Shop";
+import ShopUpdates from "../pageSegments/ShopUpdates";
 import Offer from "../pageSegments/Offer";
 import Blog from "../pageSegments/Blog";
 import Newsletter from "../pageSegments/Newsletter";
@@ -30,7 +30,7 @@ const Home = () => {
         <Testimonial />
         <Team />
         <Counter />
-        <Shop />
+        <ShopUpdates />
         <Offer />
         <Blog />
         <Newsletter />

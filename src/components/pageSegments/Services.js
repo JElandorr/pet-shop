@@ -1,6 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
+  const [showServices, setShowServices] = useState(null);
+  const services = [
+    {
+      id: 0,
+      title: "Veterinary care",
+      titleAlt: "care",
+      icon: "images/icon/care.png",
+      description:
+        "We offer full veterinary care for dogs, cats, birds, reptiles, fish, and other small animals. ",
+    },
+    {
+      id: 1,
+      title: "Pet Day Camps",
+      titleAlt: "camps",
+      icon: "images/icon/camp.png",
+      description: "We offer pet day camps and day care.",
+    },
+    {
+      id: 2,
+      title: "Pet Boarding",
+      titleAlt: "boarding",
+      icon: "images/icon/nutrition.png",
+      description: "We offer pet boarding for all kinds of pets.",
+    },
+    {
+      id: 3,
+      title: "Pet Grooming",
+      titleAlt: "grooming",
+      icon: "images/icon/insurance.png",
+      description: "We offer pet grooming for all kinds of pets.",
+    },
+  ];
+
+  const servicesTitle = (serviceData) => {
+    return (
+      <li
+        key={serviceData.id}
+        className={showServices === serviceData.id ? "active" : ""}
+        role="presentation"
+      >
+        <Link to="#" onClick={() => handleShowServices(serviceData.id)}>
+          <i>
+            <img src={serviceData.icon} alt={serviceData.titleAlt} />
+          </i>
+          {serviceData.title}
+        </Link>
+      </li>
+    );
+  };
+
+  const servicesContent = (serviceData) => {
+    return (
+      <div className="tab-pane" role="tabpanel">
+        <div className="tab-box">
+          <p>{serviceData.description}</p>
+        </div>
+      </div>
+    );
+  };
+
+  const handleShowServices = (id) => {
+    setShowServices((state) => (state === id ? null : id));
+  };
+
   return (
     <div id="services" className="services container-fluid no-padding">
       <div className="section-padding" />
@@ -18,137 +83,13 @@ const Services = () => {
         <div className="service-tab col-md-9 no-padding">
           <div className="col-md-4 col-sm-5 no-padding">
             <ul className="nav nav-tabs" role="tablist">
-              <li className="active" role="presentation">
-                <a
-                  data-toggle="tab"
-                  role="tab"
-                  aria-controls="tab-one"
-                  href="#tab-one"
-                  aria-expanded="true"
-                >
-                  <i>
-                    <img src="images/icon/care.png" alt="care" />
-                  </i>
-                  Veterinary care
-                </a>
-              </li>
-              <li className="" role="presentation">
-                <a
-                  data-toggle="tab"
-                  role="tab"
-                  aria-controls="tab-two"
-                  href="#tab-two"
-                  aria-expanded="false"
-                >
-                  <i>
-                    <img src="images/icon/camp.png" alt="care" />
-                  </i>
-                  Pets Day Camp
-                </a>
-              </li>
-              <li className="" role="presentation">
-                <a
-                  data-toggle="tab"
-                  role="tab"
-                  aria-controls="tab-three"
-                  href="#tab-three"
-                  aria-expanded="false"
-                >
-                  <i>
-                    <img src="images/icon/nutrition.png" alt="nutrition" />
-                  </i>
-                  Pet Nutrition
-                </a>
-              </li>
-              <li className="" role="presentation">
-                <a
-                  data-toggle="tab"
-                  role="tab"
-                  aria-controls="tab-four"
-                  href="#tab-four"
-                  aria-expanded="false"
-                >
-                  <i>
-                    <img src="images/icon/insurance.png" alt="insurance" />
-                  </i>
-                  Pet Insurance
-                </a>
-              </li>
+              {services.map((service) => servicesTitle(service))}
             </ul>
           </div>
           <div className="tab-content col-md-8 col-sm-7 no-padding">
-            <div id="tab-one" className="tab-pane active" role="tabpanel">
-              <div className="tab-box">
-                <p>
-                  1 Trajectory into an orbit which freezes his life support
-                  systems and returns Buck Rogers to Earth five-hundred years
-                  later. We're gonna do it. On your mark get set and go now. Got
-                  a dream and we just know now we're gonna make our dream come
-                  true. Space. The final frontier. These are the voyages of the
-                  Starship Enterprise.
-                </p>
-                <p>
-                  Now were up in the big leagues getting' our turn at bat? No
-                  phone no lights no motor car not a single luxury. Like
-                  Robinson Crusoe it's primitive as can be! Boy the way Glen
-                  Miller played. Songs that made the hit parade guys like us.
-                </p>
-              </div>
-            </div>
-            <div id="tab-two" className="tab-pane" role="tabpanel">
-              <div className="tab-box">
-                <p>
-                  2 Trajectory into an orbit which freezes his life support
-                  systems and returns Buck Rogers to Earth five-hundred years
-                  later. We're gonna do it. On your mark get set and go now. Got
-                  a dream and we just know now we're gonna make our dream come
-                  true. Space. The final frontier. These are the voyages of the
-                  Starship Enterprise.
-                </p>
-                <p>
-                  Now were up in the big leagues getting' our turn at bat? No
-                  phone no lights no motor car not a single luxury. Like
-                  Robinson Crusoe it's primitive as can be! Boy the way Glen
-                  Miller played. Songs that made the hit parade guys like us.
-                </p>
-              </div>
-            </div>
-            <div id="tab-three" className="tab-pane" role="tabpanel">
-              <div className="tab-box">
-                <p>
-                  3 Trajectory into an orbit which freezes his life support
-                  systems and returns Buck Rogers to Earth five-hundred years
-                  later. We're gonna do it. On your mark get set and go now. Got
-                  a dream and we just know now we're gonna make our dream come
-                  true. Space. The final frontier. These are the voyages of the
-                  Starship Enterprise.
-                </p>
-                <p>
-                  Now were up in the big leagues getting' our turn at bat? No
-                  phone no lights no motor car not a single luxury. Like
-                  Robinson Crusoe it's primitive as can be! Boy the way Glen
-                  Miller played. Songs that made the hit parade guys like us.
-                </p>
-              </div>
-            </div>
-            <div id="tab-four" className="tab-pane" role="tabpanel">
-              <div className="tab-box">
-                <p>
-                  4 Trajectory into an orbit which freezes his life support
-                  systems and returns Buck Rogers to Earth five-hundred years
-                  later. We're gonna do it. On your mark get set and go now. Got
-                  a dream and we just know now we're gonna make our dream come
-                  true. Space. The final frontier. These are the voyages of the
-                  Starship Enterprise.
-                </p>
-                <p>
-                  Now were up in the big leagues getting' our turn at bat? No
-                  phone no lights no motor car not a single luxury. Like
-                  Robinson Crusoe it's primitive as can be! Boy the way Glen
-                  Miller played. Songs that made the hit parade guys like us.
-                </p>
-              </div>
-            </div>
+            {showServices
+              ? servicesContent(services[showServices])
+              : servicesContent(services[0])}
           </div>
         </div>
       </div>

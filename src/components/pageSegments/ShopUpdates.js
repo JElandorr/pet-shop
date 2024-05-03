@@ -1,6 +1,6 @@
 import React from "react";
 
-const Shop = () => {
+const ShopUpdates = () => {
   return (
     <div className="shop container-fluid no-padding">
       <div className="section-padding" />
@@ -150,4 +150,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopUpdates;
