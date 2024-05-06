@@ -10,6 +10,8 @@ import BlogDetailsPage from "./components/pages/BlogDetailsPage";
 import ServicesPage from "./components/pages/ServicesPage";
 import Page404 from "./components/pages/Page404";
 import ContactUsPage from "./components/pages/ContactUsPage";
+import LoginPage from "./components/pages/LoginPage";
+import RegisterPage from "./components/pages/RegisterPage";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/blog-details" element={<BlogDetailsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

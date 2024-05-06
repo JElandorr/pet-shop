@@ -118,7 +118,7 @@ const Header = () => {
             </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav">
-                <li className="active">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>
@@ -141,10 +141,10 @@ const Header = () => {
                   <i className="ddl-switch fa fa-angle-down" />
                   <ul className="dropdown-menu">
                     <li>
-                      <Link to="/shop-pets">Pets List</Link>
+                      <Link to="/shop">Pets List</Link>
                     </li>
                     <li>
-                      <Link to="/shop-details">Product Details</Link>
+                      <Link to="/product-details">Product Details</Link>
                     </li>
                     <li>
                       <Link to="checkout.html">Place Order</Link>
@@ -154,7 +154,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                   <Link
                     to="#"
                     title="Pages"
@@ -171,7 +171,7 @@ const Header = () => {
                       <Link to="error.html">Error</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="dropdown">
                   <Link
                     to="/blog"
@@ -192,6 +192,27 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/contact-us">Contact US</Link>
+                </li>
+                <li className="dropdown">
+                  <Link
+                    to="#"
+                    title="Blog"
+                    className="dropdown-toggle"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    User
+                  </Link>
+                  <i className="ddl-switch fa fa-angle-down" />
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link to="/login">Login</Link>
+                    </li>
+                    <li>
+                      <Link to="/register">Register</Link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>

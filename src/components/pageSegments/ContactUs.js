@@ -1,18 +1,13 @@
 import React from "react";
 
+// import Map from "./Map";
+
 const ContactUs = () => {
   return (
     <>
       {/* Map Section*/}
       <div className="map-section container-fluid no-padding">
-        <div
-          className="map-canvas"
-          id="map-canvas-contact"
-          data-lat="32.68284"
-          data-lng="-97.07534"
-          data-string="<div class='map-address'>50- Design Street, Texas - USA</div>"
-          data-zoom={12}
-        />
+        {/* <Map /> */}
       </div>
       {/* Map Section /- */}
       {/* Contact Form */}
