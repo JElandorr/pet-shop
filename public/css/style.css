@@ -770,6 +770,17 @@ ul {
   font-size: 12px;
 }
 
+/* Services */
+
+.tab-pane {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-pane p {
+  font-size: 14px;
+}
+
 /* ## Responsive */
 
 /* -- min-width: 992 to max-width: 1200 */
