@@ -174,7 +174,7 @@ const Header = () => {
                 </li>
                 <li className="dropdown">
                   <Link
-                    to="blog.html"
+                    to="/blog"
                     title="Blog"
                     className="dropdown-toggle"
                     role="button"
@@ -186,12 +186,12 @@ const Header = () => {
                   <i className="ddl-switch fa fa-angle-down" />
                   <ul className="dropdown-menu">
                     <li>
-                      <Link to="single-blog.html">Single Blog</Link>
+                      <Link to="/blog-details">Blog Details</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="contact-us.html">Contact US</Link>
+                  <Link to="/contact-us">Contact US</Link>
                 </li>
               </ul>
             </div>

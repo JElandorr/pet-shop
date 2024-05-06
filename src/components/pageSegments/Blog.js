@@ -19,10 +19,10 @@ const Blog = () => {
           <div className="col-md-4 col-sm-6">
             <article>
               <div className="entry-cover">
-                <a href="single-blog.html">
+                <a href="/blog-details">
                   <img src="images/blog/home-blog-1.jpg" alt="blog-1" />
                 </a>
-                <a href="single-blog.html" className="read-more">
+                <a href="/blog-details" className="read-more">
                   Read More
                 </a>
               </div>
@@ -55,9 +55,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <h3 className="entry-title">
-                  <a href="single-blog.html">
-                    Special care on Pets by physician
-                  </a>
+                  <a href="/blog-details">Special care on Pets by physician</a>
                 </h3>
                 <div className="entry-content">
                   <p>
@@ -89,10 +87,10 @@ const Blog = () => {
           <div className="col-md-4 col-sm-6">
             <article>
               <div className="entry-cover">
-                <a href="single-blog.html">
+                <a href="/blog-details">
                   <img src="images/blog/home-blog-2.jpg" alt="blog-2" />
                 </a>
-                <a href="single-blog.html" className="read-more">
+                <a href="/blog-details" className="read-more">
                   Read More
                 </a>
               </div>
@@ -125,9 +123,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <h3 className="entry-title">
-                  <a href="single-blog.html">
-                    Regular Pets Oral Health Checkup
-                  </a>
+                  <a href="/blog-details">Regular Pets Oral Health Checkup</a>
                 </h3>
                 <div className="entry-content">
                   <p>
@@ -159,10 +155,10 @@ const Blog = () => {
           <div className="col-md-4 col-sm-6">
             <article>
               <div className="entry-cover">
-                <a href="single-blog.html">
+                <a href="/blog-details">
                   <img src="images/blog/home-blog-3.jpg" alt="blog-3" />
                 </a>
-                <a href="single-blog.html" className="read-more">
+                <a href="/blog-details" className="read-more">
                   Read More
                 </a>
               </div>
@@ -195,9 +191,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <h3 className="entry-title">
-                  <a href="single-blog.html">
-                    Experts Guidance on Pet Nutrition
-                  </a>
+                  <a href="/blog-details">Experts Guidance on Pet Nutrition</a>
                 </h3>
                 <div className="entry-content">
                   <p>
