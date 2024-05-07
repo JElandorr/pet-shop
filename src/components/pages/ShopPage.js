@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../pageSegments/Header";
 import Breadcrumbs from "../pageSegments/Breadcrumbs";
-import Shop from "../pageSegments/Shop";
+import Shop from "../pageSegments/Shop/Shop";
 import Newsletter from "../pageSegments/Newsletter";
 import Footer from "../pageSegments/Footer";
 

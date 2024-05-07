@@ -173,12 +173,9 @@ const Shop = () => {
                       <img src="images/shop/pets-1.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -188,7 +185,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -213,12 +213,9 @@ const Shop = () => {
                       <img src="images/shop/pets-2.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -228,7 +225,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -253,12 +253,9 @@ const Shop = () => {
                       <img src="images/shop/pets-3.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        VIEW DETAILS
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -268,7 +265,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                       <span className="new">new</span>
@@ -294,12 +294,9 @@ const Shop = () => {
                       <img src="images/shop/pets-4.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -309,7 +306,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -334,12 +334,9 @@ const Shop = () => {
                       <img src="images/shop/pets-5.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -349,7 +346,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -374,12 +374,9 @@ const Shop = () => {
                       <img src="images/shop/pets-6.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -389,7 +386,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -446,12 +446,9 @@ const Shop = () => {
                       <img src="images/shop/pets-8.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -461,7 +458,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -486,12 +486,9 @@ const Shop = () => {
                       <img src="images/shop/pets-9.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -501,7 +498,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -526,12 +526,9 @@ const Shop = () => {
                       <img src="images/shop/pets-10.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -541,7 +538,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
@@ -566,12 +566,9 @@ const Shop = () => {
                       <img src="images/shop/pets-11.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -581,7 +578,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                       <span className="new">new</span>
@@ -607,12 +607,9 @@ const Shop = () => {
                       <img src="images/shop/pets-12.jpg" alt="shop" />
                       <a className="cart" href="#">
                         <i>
-                          <img
-                            src="images/icon/addtocart.png"
-                            alt="Add To Cart"
-                          />
+                          <img src="images/icon/wishlist.png" alt="wishlist" />
                         </i>
-                        Add To Cart
+                        Details
                       </a>
                       <div className="wishlist">
                         <a href="#">
@@ -622,7 +619,10 @@ const Shop = () => {
                           />
                         </a>
                         <a href="#">
-                          <img src="images/icon/wishlist.png" alt="wishlist" />
+                          <img
+                            src="images/icon/addtocart.png"
+                            alt="Add To Cart"
+                          />
                         </a>
                       </div>
                     </div>
