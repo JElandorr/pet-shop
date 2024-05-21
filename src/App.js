@@ -28,6 +28,8 @@ function App() {
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
+
+      {/* <HomePage /> */}
     </div>
   );
 }
