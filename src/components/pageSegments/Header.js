@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { useLanguage } from "../contexts/LanguageContext";
+
 const Header = () => {
+  const { language, changeLanguage } = useLanguage();
+
   return (
     <header className="header-main">
       {/* Top Header */}
@@ -66,7 +70,11 @@ const Header = () => {
               <div className="location">
                 <img src="images/icon/location-ic.png" alt="Location" />
                 <p>
-                  <span>Our Location</span> 50- Design Street, Texas
+                  <span>
+                    {language === "en" ? "Our Location" : ""}
+                    {language === "bg" ? "Нашето местоположение" : ""}
+                  </span>
+                  50- Design Street, Texas
                 </p>
               </div>
               <div className="time-scheduled">
